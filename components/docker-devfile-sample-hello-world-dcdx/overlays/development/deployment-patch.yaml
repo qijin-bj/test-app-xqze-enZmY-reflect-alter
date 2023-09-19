@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: docker-devfile-sample-hello-world-dcdx
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/qijing/build-e2e-apnv-tenant/test-app-xqze/docker-devfile-sample-hello-world-dcdx@sha256:9cf93c5f9eafe89f84e625ca1108c75c9b66f67261fa516e857ed1216dddd5b9
+        name: container-image
+        resources: {}
+status: {}
